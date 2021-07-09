@@ -1,5 +1,6 @@
 ﻿using GestioneSpese_CatalinaDorneanu.Watcher;
 using System;
+using EventHandler = GestioneSpese_CatalinaDorneanu.Watcher.EventHandler;
 
 namespace GestioneSpese_CatalinaDorneanu
 {
@@ -8,7 +9,10 @@ namespace GestioneSpese_CatalinaDorneanu
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            FileWatcher.NewFileWatcher();
+            //FileWatcher.NewFileWatcher();
+            //EventHandler.Approval(); //funziona
+            //EventHandler.Rimborso();
+            EventHandler.SaveOnFile("spese.txt");
 
         }
     }

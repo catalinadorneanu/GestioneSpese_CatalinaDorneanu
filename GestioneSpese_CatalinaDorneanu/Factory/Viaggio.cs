@@ -1,6 +1,6 @@
 ﻿namespace GestioneSpese_CatalinaDorneanu.Factory
 {
-    internal class Viaggio : ICategory
+    public class Viaggio : ICategory
     {
         public double Rimborso(double importo)
         {

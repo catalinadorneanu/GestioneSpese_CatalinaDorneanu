@@ -8,8 +8,9 @@ namespace GestioneSpese_CatalinaDorneanu.Factory
 {
     public class CategoryFactory
     {
-        public static double GetRimborso(string type, double importo)
+        public static ICategory GetRimborso(string type)
         {
+            
             ICategory categoria;
             switch (type)
             {
@@ -30,7 +31,11 @@ namespace GestioneSpese_CatalinaDorneanu.Factory
                     categoria = null;
                     break;
             }
-            return categoria.Rimborso(importo);
+            //double rimborso = categoria.Rimborso(importo);
+            //return rimborso;
+            return categoria;
+            
+            
         }
     }
 }
